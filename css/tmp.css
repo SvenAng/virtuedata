@@ -1,0 +1,33 @@
+/*temp css*/
+.view-observationer-p-rack-lista h3{
+    margin: 0;
+}
+.view-observationer-p-rack-lista ul{
+    margin: 0;
+    padding: 0;
+}
+.view-observationer-p-rack-lista .item-list ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.view-observationer-p-rack-lista .views-field-title{
+    font-size: 16px;
+    font-weight: 600;
+}
+.view-observationer-p-rack-lista .views-label{
+    font-weight: 600;
+    color: #777;
+}
+.view-observationer-p-rack-lista em.views-label{
+    color: #111;
+    margin-left: 10px;
+}
+.b-header-wrapper .sponsorloggor .block {
+    width: 230px;
+    display: inline-block;
+    padding-left: 1.875rem;
+}
+.b-header-wrapper .sponsorloggor .block img{
+    width: 100%;
+    height: auto;
+}

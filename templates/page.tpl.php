@@ -31,11 +31,11 @@
 
           ?>
           <ul class="language-switch">
-            <li><a class="lan-item <?php print $active_sv; ?>" href="/sv">Svenska</a></li>
-            <li><a class="lan-item <?php print $active_en; ?>"href="/">English</a></li>
-            <li><a class="lan-item <?php print $active_ca; ?>"href="/ca">CATALÀ</a></li>
-            <li><a class="lan-item <?php print $active_es; ?>"href="/es">ESPAÑOL</a></li>
-            <li><a class="lan-item <?php print $active_de; ?>"href="/de">DEUTSCH</a></li>
+              <li><a class="lan-item se <?php print $active_sv; ?>" href="/sv"><img src="/sites/all/themes/virtuedata/css/images/se.png"></a></li>
+              <li><a class="lan-item en <?php print $active_en; ?>"href="/"><img src="/sites/all/themes/virtuedata/css/images/en.png"></a></li>
+              <li><a class="lan-item ca <?php print $active_ca; ?>"href="/ca"><img src="/sites/all/themes/virtuedata/css/images/ca.png"></a></li>
+              <li><a class="lan-item es <?php print $active_es; ?>"href="/es"><img src="/sites/all/themes/virtuedata/css/images/es.png"></a></li>
+              <li><a class="lan-item de <?php print $active_de; ?>"href="/de"><img src="/sites/all/themes/virtuedata/css/images/de.png"></a></li>
         </div>
       </section>
       <!--/.l-header-region -->

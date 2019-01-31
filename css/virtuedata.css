@@ -8248,7 +8248,7 @@ h2.block-title {
   content: "\f105";
   position: absolute;
   left: 0px;
-  top: 7px;
+  top: 8px;
 }
 .l-main ul.menu li li {
   padding-left: 1rem;
@@ -8262,7 +8262,16 @@ h2.block-title {
   content: "\f107";
   position: absolute;
   left: 0px;
-  top: 7px;
+  top: 8px;
+}
+.l-main ul.menu li.collapsed > a::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "\f067";
+  position: absolute;
+  left: 0px;
+  top: 8px;
+  font-size: 0.7rem;
 }
 .l-main ul.menu .active,
 .l-main ul.menu :hover {

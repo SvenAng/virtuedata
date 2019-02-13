@@ -8212,7 +8212,9 @@ h2.block-title {
   left: 2rem;
   z-index: 1;
 }
-.l-featured .banner-wrapper div .columns .banner-body h2, .l-featured .banner-wrapper div .columns .banner-body h3, .l-featured .banner-wrapper div .columns .banner-body h4 {
+.l-featured .banner-wrapper div .columns .banner-body h2,
+.l-featured .banner-wrapper div .columns .banner-body h3,
+.l-featured .banner-wrapper div .columns .banner-body h4 {
   color: #ffffff;
 }
 
@@ -8277,6 +8279,9 @@ h2.block-title {
 .l-main ul.menu :hover {
   color: #ff8519;
 }
+.l-main .news-item h4 {
+  font-size: 1.1rem;
+}
 .l-main .posted {
   color: #AAAAAA;
   margin-bottom: 0.9375rem;
@@ -8309,8 +8314,30 @@ h2.block-title {
 .l-main .sidebar-second .news-block .news-item .posted {
   margin: 0;
 }
-.l-main .sidebar-second .news-block .news-item :hover h4, .l-main .sidebar-second .news-block .news-item :hover p, .l-main .sidebar-second .news-block .news-item :hover .posted {
+.l-main .sidebar-second .news-block .news-item :hover h4,
+.l-main .sidebar-second .news-block .news-item :hover p,
+.l-main .sidebar-second .news-block .news-item :hover .posted {
   color: #ff8519;
+}
+.l-main .vocabulary-artgruppering {
+  margin-bottom: 1.5rem;
+}
+.l-main .vocabulary-artgruppering .taxonomy-term-description {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+  padding-right: 0.6rem;
+}
+.l-main .vocabulary-artgruppering .taxonomy-term-description i {
+  font-size: 1.6rem;
+  color: #ff8519;
+}
+.l-main .vocabulary-artgruppering .field {
+  display: inline-block;
+  font-style: italic;
+  color: #444444;
+  vertical-align: middle;
 }
 
 /*# sourceMappingURL=virtuedata.css.map */

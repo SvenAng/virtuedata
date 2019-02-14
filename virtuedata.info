@@ -66,8 +66,10 @@ scripts[] = js/app.min.js
 ;   <?php print render($page['header']); ?>
 
 regions[header]              = Header
-regions[logos]              = Loggor
-regions[main_menu]              = Main menu
+regions[sponsorloggor-1]     = Sponsorloggor 1
+regions[sponsorloggor-2]     = Sponsorloggor 2
+regions[main_menu_mobil]     = Mobilmeny
+regions[main_menu]           = Main menu
 regions[help]                = Help
 regions[highlighted]         = Highlighted
 regions[featured]            = Featured

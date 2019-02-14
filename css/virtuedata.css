@@ -425,6 +425,169 @@ th {
   padding: 0;
 }
 
+.mobil-nav.open {
+  opacity: 1;
+  pointer-events: all;
+  z-index: 1000;
+}
+
+.mobil-nav {
+  background: #ff8519;
+  opacity: 0;
+  overflow-y: auto;
+  position: absolute;
+  transition: all 0.2s ease-in-out 0s;
+  width: 100%;
+  z-index: -1;
+}
+.mobil-nav .language-switch {
+  padding: 1rem 0;
+}
+.mobil-nav .language-switch li {
+  display: inline-block;
+  width: 18%;
+  text-align: center;
+}
+.mobil-nav .language-switch li img {
+  border: #FFFFFF 1px solid;
+}
+.mobil-nav #main-navigation-content {
+  padding: 0;
+}
+.mobil-nav #main-navigation-content ul {
+  list-style: none;
+  margin: 0;
+}
+.mobil-nav #main-navigation-content #menu-close {
+  color: #fff;
+  display: block;
+  font-size: 23px;
+  height: 32px;
+  padding: 4px 8px;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  transition: color 0.2s ease-in-out 0s;
+  width: 32px;
+}
+.mobil-nav #main-navigation-content .menu .virtuedata-menu-level-2 {
+  display: none;
+}
+.mobil-nav #main-navigation-content .menu li.expanded > a::after {
+  content: " + ";
+}
+.mobil-nav #main-navigation-content .menu .leaf a::after {
+  content: inherit;
+}
+.mobil-nav #main-navigation-content .menu li {
+  padding: 1rem;
+  border-bottom: 1px #FFFFFF dotted;
+}
+.mobil-nav #main-navigation-content .menu li ul li a {
+  text-transform: none;
+}
+.mobil-nav #main-navigation-content .menu li:last-child {
+  border: none;
+}
+.mobil-nav #main-navigation-content .menu li a {
+  color: #fff;
+  display: block;
+  padding: 0;
+  text-transform: uppercase;
+  transition: color 0.2s ease-in-out 0s;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.mobil-nav #main-navigation-content .menu ul li a.active {
+  color: #000000;
+}
+.mobil-nav #main-navigation-content .menu ul {
+  background: #e26900;
+  padding-bottom: 0.3rem;
+  padding-top: 0.3rem;
+  margin: 1rem 0;
+}
+
+.menu-hamburgare {
+  /**/
+  /**/
+  /* active state, i.e. menu open */
+}
+.menu-hamburgare .c-hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 38px;
+  height: 38px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.menu-hamburgare .c-hamburger:focus {
+  outline: none;
+}
+.menu-hamburgare .c-hamburger span {
+  display: block;
+  position: relative;
+  top: 20px;
+  height: 4px;
+  background: #ff8519;
+  border-radius: 5px;
+}
+.menu-hamburgare .c-hamburger span::before,
+.menu-hamburgare .c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #ff8519;
+  content: "";
+  border-radius: 5px;
+}
+.menu-hamburgare .c-hamburger span::before {
+  top: -10px;
+}
+.menu-hamburgare .c-hamburger span::after {
+  bottom: -10px;
+}
+.menu-hamburgare .c-hamburger--htx span {
+  transition: background 0s 0.3s;
+}
+.menu-hamburgare .c-hamburger--htx span::before,
+.menu-hamburgare .c-hamburger--htx span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+.menu-hamburgare .c-hamburger--htx span::before {
+  transition-property: top, transform;
+}
+.menu-hamburgare .c-hamburger--htx span::after {
+  transition-property: bottom, transform;
+}
+.menu-hamburgare .c-hamburger--htx.is-active span {
+  background: none;
+}
+.menu-hamburgare .c-hamburger--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+.menu-hamburgare .c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+.menu-hamburgare .c-hamburger--htx.is-active span::before,
+.menu-hamburgare .c-hamburger--htx.is-active span::after {
+  transition-delay: 0s, 0.3s;
+}
+
 meta.foundation-version {
   font-family: "/5.5.0/";
 }
@@ -8116,6 +8279,12 @@ h2.block-title {
   border-bottom: #CCCCCC 1px solid;
   padding: 0.9375rem 0;
 }
+.l-header-region .mobile-logo-wrapper {
+  text-align: right;
+}
+.l-header-region .mobile-logo-wrapper img {
+  max-height: 40px;
+}
 .l-header-region ul {
   list-style-type: none;
   margin: 0;
@@ -8159,12 +8328,14 @@ h2.block-title {
   padding: 0.375rem 1.875rem;
 }
 .b-header-wrapper .sponsorloggor .block .logga2 {
-  width: 250px;
-  height: auto;
   padding: 0.375rem 1.875rem;
 }
 .b-header-wrapper .sponsorloggor .block .logga3 {
   padding-left: 1.44231rem;
+}
+.b-header-wrapper .sponsorloggor .block img {
+  width: 100%;
+  height: auto;
 }
 .b-header-wrapper .b-header {
   padding: 1.875rem 0;
@@ -8226,14 +8397,13 @@ h2.block-title {
 .l-main {
   margin-bottom: 1.875rem;
 }
+.l-main ul {
+  list-style: none;
+}
 .l-main ul.menu {
-  list-style-type: none;
   margin: 0;
   padding: 0;
   border-right: #CCCCCC 1px dashed;
-}
-.l-main ul.menu ul {
-  border: none;
 }
 .l-main ul.menu li {
   position: relative;

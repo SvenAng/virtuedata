@@ -1,3 +1,4 @@
+
 <!--.page -->
 <div role="document" class="page">
 
@@ -6,6 +7,12 @@
 
         <!--.l-header-region -->
         <section class="l-header-region row">
+            <div class="columns small-10 show-for-small-only">
+                <div class="mobile-logo-wrapper">
+                    <?php if ($linked_logo): print $linked_logo; endif; ?>
+                </div>
+            </div>
+            
             <div class="columns small-2">
                 <div class="menu-hamburgare">
                     <div class="c-hamburger c-hamburger--htx">
@@ -13,11 +20,7 @@
                     </div>
                 </div>
             </div>
-            <div class="columns small-10 show-for-small-only">
-                <div class="mobile-logo-wrapper">
-                    <?php if ($linked_logo): print $linked_logo; endif; ?>
-                </div>
-            </div>
+            
             <div class="columns small-10 show-for-medium-up">
                 <?php 
                     global $language;
@@ -74,18 +77,20 @@
 
         <section class="b-header-wrapper <?php print $alt_header_classes; ?>">
             <div class="b-header row">
-                <div class="columns logga show-for-medium-up medium-2 large-4">
+                <div class="columns logga show-for-medium-up medium-4 large-4">
                     <?php if ($linked_logo): print $linked_logo; endif; ?>
                 </div>
-                <div class="columns sponsorloggor medium-10 large-8">
+                <div class="columns sponsorloggor small-6 medium-4 large-4">
                     <?php print render($page['sponsorloggor-1']); ?>
+                </div>
+                <div class="columns sponsorloggor small-6 medium-4 large-4">
                     <?php print render($page['sponsorloggor-2']); ?>
                 </div>
             </div>
 
 
             <nav id="main-menu" class="navigation show-for-medium-up row" role="navigation">
-                <?php //print ($alt_main_menu); ?>
+                
                 <?php print render($page['main_menu']); ?>
             </nav> <!-- /#main-menu -->
 

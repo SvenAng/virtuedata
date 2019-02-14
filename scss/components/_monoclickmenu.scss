@@ -12,17 +12,19 @@
         padding: 1rem 0;
         li{
             display: inline-block;
-            width: 18%;
+            width: 18.8%;
             text-align: center;
             img{
                 border: $white 1px solid;
+                width: 60%;
             }
         }
         
     }
     background: $primary-color;
 //    height: 100%;
-//    top: 66px;
+//    top: 77px;
+//    left: 0;
     opacity: 0;
     overflow-y: auto;
     position: absolute;
@@ -159,10 +161,15 @@
         border: none;
         cursor: pointer;
         transition: background 0.3s;
+//        right: 10px;
         //    margin-left: 3rem;
 
     }
-
+    @media #{$small-only} {
+        .c-hamburger {
+            right: 10px;
+        }
+    }
     .c-hamburger:focus {
         outline: none;
     }

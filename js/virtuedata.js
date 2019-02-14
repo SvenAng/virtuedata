@@ -38,7 +38,7 @@ jQuery(document).ready(function () {
     var interval = 1;
 
     setInterval(function () {
-        if (interval == 33325) {
+        if (interval == 25) {
             jQuery('#mobil-navigation').removeClass('open');
             jQuery('.c-hamburger').removeClass('is-active');
             interval = 1;

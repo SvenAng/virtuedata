@@ -1,11 +1,13 @@
 // Virtuedata version 3 2018
 // ================= Generellt =======================
 body {
-    background: $aluminum
+//    background: $aluminum
+    
 }
 
+
 body.cke_editable_themed {
-    background: $gainsboro;
+//    background: $gainsboro;
 }
 
 .page {
@@ -60,13 +62,16 @@ h2.block-title {
 .l-header-region {
     border-bottom: $horiz-line-color 1px solid;
     padding: $column-gutter/2 0;
-    .mobile-logo-wrapper{
-        text-align: right;
-        img{
-            max-height: 40px;
-            
-        }   
+
+    .mobile-logo-wrapper {
+
+        //        text-align: right;
+        img {
+            max-height: 50px;
+
+        }
     }
+
     ul {
         list-style-type: none;
         margin: 0;
@@ -119,35 +124,12 @@ h2.block-title {
 
 .b-header-wrapper {
     padding-bottom: $column-gutter;
-    
+
     .sponsorloggor {
-        text-align: right;
-
         .block {
-            width: 250px;
-            //          display: inline-block;
+            padding: 0 $column-gutter;
             height: 100px;
-            float: right;
-
             border-left: $menu-header-font-color 1px solid;
-
-            .logga1 {
-                padding: $column-gutter/5 $column-gutter;
-            }
-
-            .logga2 {
-//                width: 250px;
-//                height: auto;
-                padding: $column-gutter/5 $column-gutter;
-            }
-
-            .logga3 {
-                padding-left: $column-gutter/1.3;
-            }
-            img{
-                width: 100%;
-                height: auto; 
-            }
         }
     }
 
@@ -158,6 +140,23 @@ h2.block-title {
     p {
         margin-bottom: 0;
     }
+
+    @media #{$small-only} {
+        .sponsorloggor {
+            .block {
+                border: none;
+                padding: 0 $column-gutter/5;
+                height: inherit;
+            }
+        }
+
+        .b-header {
+            padding: $column-gutter/3 0;
+        }
+
+        padding-bottom: $column-gutter/3;
+    }
+
 }
 
 //================================
@@ -177,7 +176,6 @@ h2.block-title {
 
         li {
 
-            //      display: inline-block;
             float: left;
 
             a {
@@ -201,17 +199,19 @@ h2.block-title {
 
 .l-featured {
     margin-bottom: $column-gutter;
-
+    display:block;
     .banner-wrapper {
 
         div {
             .columns {
 
-                //        width: 300px; //responsiv
-                //        display: inline-block;
-                //        position: relative;
+
                 .banner-image {
                     position: relative;
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
                 }
 
                 .banner-body {
@@ -229,13 +229,17 @@ h2.block-title {
                 }
             }
         }
+        @media #{$small-only} {
+            div {
+                .columns {
+                    padding-bottom:  $column-gutter/2;
+                }
+            }
+        }
     }
 }
 
 
-.l-main {
-    //  background: $ghost; 
-}
 
 //===== footer
 .l-footer-columns {
@@ -252,24 +256,21 @@ h2.block-title {
 // ========================= Main =======================
 .l-main {
     margin-bottom: $column-gutter;
+
     ul {
         list-style: none;
     }
+
     ul.menu {
-//        list-style-type: none;
+        //        list-style-type: none;
         margin: 0;
         padding: 0;
         border-right: #CCCCCC 1px dashed;
-//        list-style: none;
-        ul {
-//            border: none;
-//            list-style: none;
-        }
 
         li {
             position: relative;
             margin: 0;
-//            list-styl
+
             a {
                 color: $menu-font-color;
                 padding: 7px 10px 8px 25px;
@@ -319,11 +320,13 @@ h2.block-title {
             color: $primary-color;
         }
     }
-    .news-item{
-        h4{
+
+    .news-item {
+        h4 {
             font-size: 1.1rem;
-        }   
+        }
     }
+
     .posted {
         color: $base;
         margin-bottom: $column-gutter/2;
@@ -379,11 +382,13 @@ h2.block-title {
 
     .vocabulary-artgruppering {
         margin-bottom: 1.5rem;
+
         .taxonomy-term-description {
             i {
                 font-size: 1.6rem;
                 color: $primary-color;
             }
+
             display: inline-block;
             padding: 0;
             margin: 0;

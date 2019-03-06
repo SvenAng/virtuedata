@@ -1,13 +1,13 @@
 // Virtuedata version 3 2018
 // ================= Generellt =======================
 body {
-//    background: $aluminum
-    
+    //    background: $aluminum
+
 }
 
 
 body.cke_editable_themed {
-//    background: $gainsboro;
+    //    background: $gainsboro;
 }
 
 .page {
@@ -199,7 +199,8 @@ h2.block-title {
 
 .l-featured {
     margin-bottom: $column-gutter;
-    display:block;
+    display: block;
+
     .banner-wrapper {
 
         div {
@@ -208,7 +209,8 @@ h2.block-title {
 
                 .banner-image {
                     position: relative;
-                    img{
+
+                    img {
                         width: 100%;
                         height: auto;
                     }
@@ -229,10 +231,11 @@ h2.block-title {
                 }
             }
         }
+
         @media #{$small-only} {
             div {
                 .columns {
-                    padding-bottom:  $column-gutter/2;
+                    padding-bottom: $column-gutter/2;
                 }
             }
         }
@@ -403,4 +406,105 @@ h2.block-title {
             vertical-align: middle;
         }
     }
+}
+
+// Rapport accordion i rapport.
+
+.field-group-accordion-wrapper {
+//    line
+    a{
+//        line-height: 2.1rem; 
+//        position: absolute;
+//        top: 50%;
+//        padding: 1rem;
+        
+    }
+    
+    .ui-state-default a::before{
+        color: $white;
+        font-size: 1.3rem;
+    }
+    #ui-accordion-1-header-0{
+        a::before{
+            content: "1";
+            font-weight: 600;
+            margin-right: 0.5rem;
+        }
+    }
+    #ui-accordion-1-header-1{
+        a::before{
+            content: "2";
+            font-weight: 600;
+            margin-right: 0.5rem;
+        }
+    }
+    #ui-accordion-1-header-2{
+        a::before{
+            content: "3";
+            font-weight: 600;
+            margin-right: 0.5rem;
+        }
+    }
+    #ui-accordion-1-header-3{
+        a::before{
+            content: "4";
+            font-weight: 600;
+            margin-right: 0.5rem;
+        }
+    }
+    #ui-accordion-1-header-4{
+        a::before{
+            content: "5";
+            font-weight: 600;
+            margin-right: 0.5rem;
+        }
+    }
+    
+    .ui-state-default {
+        background: $iron;
+        border: none;
+        border-radius: 0;
+    }
+
+    .ui-state-active {
+        background: $primary-color;
+        display: block;
+    }
+}
+//pop upp hjälp\
+.popup-element-title {
+    padding-right: 20px;
+}
+.popup-element-body{
+    background: $steel;
+    color: $snow;
+    padding: 0.5rem 1rem;
+    border-radius: 0.6rem;
+    margin-left: 0.5rem;
+}
+
+//Rapportformuläret
+
+label{
+    font-family: $font-family-sans-serif;
+}
+button#edit-field-fynd-und-actions-ief-add{
+    padding: 0rem;
+    font-size: 0rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    background: none;
+}
+button#edit-field-fynd-und-actions-ief-add::before{
+    padding: 0.5rem;
+    content: "+ ";
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: $primary-color;
+    
+}
+.button.active{
+    background: $primary-color;
+    color: white;
 }

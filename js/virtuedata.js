@@ -46,7 +46,9 @@ jQuery(document).ready(function () {
         interval = interval + 1;
         //console.log(interval);
     }, 1000);
-
+    
+//    jQuery('button#edit-field-fynd-und-actions-ief-add').text('+');
+    
 
     //    jQuery(this).find('#edit-field-art-und-actions-ief-add').text('Lägg till art');
     //    jQuery(this).find('#edit-field-art-und-form-actions-ief-add-save--2').text('Lägg till art');

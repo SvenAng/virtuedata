@@ -1,7 +1,7 @@
 // Virtuedata version 3 2018
 // ================= Generellt =======================
 body {
-    //    background: $aluminum
+        background: $aluminum
 
 }
 
@@ -246,8 +246,45 @@ h2.block-title {
 
 //===== footer
 .l-footer-columns {
-    background: $aluminum;
+    background: $charcoal;
+    padding: $column-gutter 0;
     height: auto;
+    color: $snow;
+    text-align: center;
+    a {
+        color: $snow;
+    }
+    a:hover{
+        color: $primary-color;
+    }
+    ul.menu {
+//        text-align: center;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            padding: 0 $column-gutter/3;
+            border-right: 1px $jumbo solid;
+            
+            a{
+                color: $smoke;
+            }
+            a:hover{
+                color: $primary-color;
+            }
+        }
+        li:last-child{
+            border: none;
+        }
+
+    }
+    .footer-second{
+        padding: $column-gutter 0;
+        p{
+            margin: 0;
+        }
+    }
 }
 
 // vänster sidebar
@@ -345,13 +382,23 @@ h2.block-title {
 
     .bild-galleri-content {
         .galleri-item {
-            width: 25%;
+            width: 16.66%;
             float: left;
         }
 
         img {
             width: 100%;
             padding: 4px;
+        }
+        @media #{$small-only} {
+            .galleri-item {
+                width: 50%;
+            }
+        }
+        @media #{$medium-only} {
+            .galleri-item {
+                width: 25%;
+            }
         }
     }
 
@@ -411,55 +458,61 @@ h2.block-title {
 // Rapport accordion i rapport.
 
 .field-group-accordion-wrapper {
-//    line
-    a{
-//        line-height: 2.1rem; 
-//        position: absolute;
-//        top: 50%;
-//        padding: 1rem;
-        
+
+    //    line
+    a {
+        //        line-height: 2.1rem; 
+        //        position: absolute;
+        //        top: 50%;
+        //        padding: 1rem;
+
     }
-    
-    .ui-state-default a::before{
+
+    .ui-state-default a::before {
         color: $white;
         font-size: 1.3rem;
     }
-    #ui-accordion-1-header-0{
-        a::before{
+
+    #ui-accordion-1-header-0 {
+        a::before {
             content: "1";
             font-weight: 600;
             margin-right: 0.5rem;
         }
     }
-    #ui-accordion-1-header-1{
-        a::before{
+
+    #ui-accordion-1-header-1 {
+        a::before {
             content: "2";
             font-weight: 600;
             margin-right: 0.5rem;
         }
     }
-    #ui-accordion-1-header-2{
-        a::before{
+
+    #ui-accordion-1-header-2 {
+        a::before {
             content: "3";
             font-weight: 600;
             margin-right: 0.5rem;
         }
     }
-    #ui-accordion-1-header-3{
-        a::before{
+
+    #ui-accordion-1-header-3 {
+        a::before {
             content: "4";
             font-weight: 600;
             margin-right: 0.5rem;
         }
     }
-    #ui-accordion-1-header-4{
-        a::before{
+
+    #ui-accordion-1-header-4 {
+        a::before {
             content: "5";
             font-weight: 600;
             margin-right: 0.5rem;
         }
     }
-    
+
     .ui-state-default {
         background: $iron;
         border: none;
@@ -471,11 +524,13 @@ h2.block-title {
         display: block;
     }
 }
+
 //pop upp hjälp\
 .popup-element-title {
     padding-right: 20px;
 }
-.popup-element-body{
+
+.popup-element-body {
     background: $steel;
     color: $snow;
     padding: 0.5rem 1rem;
@@ -485,26 +540,66 @@ h2.block-title {
 
 //Rapportformuläret
 
-label{
+label {
     font-family: $font-family-sans-serif;
 }
-button#edit-field-fynd-und-actions-ief-add{
+
+button#edit-field-fynd-und-actions-ief-add {
     padding: 0rem;
     font-size: 0rem;
     margin-top: 0.5rem;
     text-align: center;
     background: none;
 }
-button#edit-field-fynd-und-actions-ief-add::before{
+
+button#edit-field-fynd-und-actions-ief-add::before {
     padding: 0.5rem;
     content: "+ ";
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
     color: $primary-color;
-    
+
 }
-.button.active{
+// Entity connect
+
+
+button#edit-field-place-add-entityconnect-field-place-all-,
+button#edit-field-place-und-0-add-entityconnect-field-place-0-{
+    padding: 0rem;
+    font-size: 0rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    background: none;
+}
+
+button#edit-field-place-add-entityconnect-field-place-all-::before,
+button#edit-field-place-und-0-add-entityconnect-field-place-0-::before{
+    padding: 0.5rem;
+    content: "+ ";
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: $primary-color;
+
+}
+.button.active {
     background: $primary-color;
     color: white;
+}
+
+.node-form {
+    .field-suffix {
+        display: none;
+    }
+
+    .date-combo {
+        .form-item {
+            margin: 0 !important;
+
+            input[type="text"] {
+                margin: 0;
+            }
+        }
+    }
 }

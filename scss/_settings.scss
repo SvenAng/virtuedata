@@ -118,7 +118,7 @@ $iron        : #CCCCCC;
 $base        : #AAAAAA;
  $aluminum    : #999999;
 $jumbo       : #888888;
-// $monsoon     : #777777;
+ $monsoon     : #777777;
 $steel       : #666666;
  $charcoal    : #555555;
 $tuatara     : #444444;
@@ -434,12 +434,12 @@ $paragraph-font-family: $body-font-family;
 // 05. Buttons
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-button-classes: $include-html-classes;
+ $include-html-button-classes: $include-html-classes;
 
 // We use these to build padding for buttons.
 // $button-tny: rem-calc(10);
-// $button-sml: rem-calc(14);
-// $button-med: rem-calc(16);
+// $button-sml: rem-calc(10);
+ $button-med: rem-calc(9);
 // $button-lrg: rem-calc(18);
 
 // We use this to control the display property.

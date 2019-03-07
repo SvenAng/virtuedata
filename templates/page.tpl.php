@@ -182,9 +182,19 @@
             <?php print render($page['sidebar_second']); ?>
         </aside>
         <?php endif; ?>
+        
+        <?php if (!empty($page['content_wide'])): ?>
+        <section role="complementary" class="sidebar-second columns small-12">
+            <?php print render($page['content_wide']); ?>
+        </section>
+        <?php endif; ?>
+        
     </main>
+    
     <!--/.l-main -->
-
+    
+    
+    
     <?php if (!empty($page['triptych_first']) || !empty($page['triptych_middle']) || !empty($page['triptych_last'])): ?>
     <!--.triptych-->
     <section class="l-triptych row">
@@ -206,12 +216,12 @@
     <section class="l-footer-columns clearfix" role="contentinfo">
         <div class="row">
             <?php if (!empty($page['footer_firstcolumn'])): ?>
-            <div class="footer-first medium-3 columns">
+            <div class="footer-first small-12 columns">
                 <?php print render($page['footer_firstcolumn']); ?>
             </div>
             <?php endif; ?>
             <?php if (!empty($page['footer_secondcolumn'])): ?>
-            <div class="footer-second medium-3 columns">
+            <div class="footer-second small-12 columns">
                 <?php print render($page['footer_secondcolumn']); ?>
             </div>
             <?php endif; ?>

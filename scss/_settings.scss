@@ -131,11 +131,19 @@ $primary-color: #ff8519;
 $primary-color-3: #fdb371;
 $primary-color-2: #e26900;
 $virtue-blue-1: #e0f3fc;
+$virtue-button-report-color:  #339AD8;
+$virtue-button-project-color: $primary-color;
+$virtue-button-blog-color: #29936B;
+$virtue-button-place-color:  #E32626;
+
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
+
+
+
 $horiz-line-color: $iron;
 $menu-font-color: $charcoal;
 $menu-header-font-color: $jumbo;
@@ -222,7 +230,7 @@ $header-font-weight: $font-weight-superbold;
 
 // We use these to control header font sizes
  $h1-font-size: rem-calc(44);
- $h2-font-size: rem-calc(37);
+ $h2-font-size: rem-calc(33);
  $h3-font-size: rem-calc(27);
  $h4-font-size: rem-calc(23);
  $h5-font-size: rem-calc(18);
@@ -270,9 +278,9 @@ $paragraph-font-family: $body-font-family;
 
 // We use these to style anchors
 // $anchor-text-decoration: none;
-// $anchor-text-decoration-hover: none;
+$anchor-text-decoration-hover: none;
 // $anchor-font-color: $primary-color;
-// $anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
+$anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;

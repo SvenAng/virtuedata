@@ -25,6 +25,16 @@ jQuery(document).ready(function () {
             jQuery('.scroll-top').fadeOut(duration);
         }
     });
+    
+//    anchorscroll
+    
+    jQuery(document).ready(function(){
+        jQuery( "a.ankare" ).click(function( event ) {
+            event.preventDefault();
+            jQuery("html, body").animate({ scrollTop: jQuery($(this).attr("href")).offset().top }, 500);
+        });
+    });
+    
     // Dödar expanded länkarna så att man kan öppna undernavigeringen
     jQuery('.mobil-nav .expanded a').click(function () {
 

@@ -196,7 +196,61 @@ h2.block-title {
         }
     }
 }
-
+.view-observationer-frontpage{
+    table{
+        width: 100%;
+    }
+}
+.node-projekt{
+    padding-bottom: $column-gutter;
+    .field-name-submitted-by{
+        padding-bottom: $column-gutter/8;
+        font-size: 0.85rem;
+        font-style: italic;
+    }
+    .bild-wrapper{
+        padding-bottom: $column-gutter/2;
+        .enskild-bild{
+            
+            height: auto;
+            display: inline-block;
+            padding: 5px;
+            img{
+                max-width: 300px;
+            }
+        }
+        
+    }
+    .body{
+        padding-top: $column-gutter/8;
+    }
+    .members-wrapper{
+        margin-bottom: $column-gutter/8;
+        span{
+            padding-right: 2px;;
+        }
+        span::after{
+            content: ", ";
+        }
+        span:last-child::after{
+            content: "";
+        }
+    }
+}
+.node-rapport{
+    .node-places.node-teaser{
+        
+        .vcard{
+            border: none;
+            margin: 0;
+            padding: 0 0 1rem 0;
+        }
+    }
+    
+    .group-left{
+        padding-bottom: $column-gutter;  
+    }
+}
 .l-featured {
     margin-bottom: $column-gutter;
     display: block;
@@ -227,7 +281,7 @@ h2.block-title {
                     top: 1rem;
                     left: 2rem;
                     z-index: 1;
-
+                    text-shadow: 3px 3px 5px #000;
                     h2,
                     h3,
                     h4 {
@@ -249,6 +303,8 @@ h2.block-title {
         ul.menu{
             margin: 0;
             list-style: none;
+            border-bottom: dashed 1px $iron;
+            padding-bottom: $column-gutter/2;
             li{
                 display: inline-table;
                 
@@ -299,8 +355,6 @@ h2.block-title {
     }
     
 }
-
-
 
 //===== footer
 .l-footer-columns {
@@ -437,27 +491,7 @@ h2.block-title {
         padding-right: 0.3rem;
     }
 
-    .bild-galleri-content {
-        .galleri-item {
-            width: 16.66%;
-            float: left;
-        }
-
-        img {
-            width: 100%;
-            padding: 4px;
-        }
-        @media #{$small-only} {
-            .galleri-item {
-                width: 50%;
-            }
-        }
-        @media #{$medium-only} {
-            .galleri-item {
-                width: 25%;
-            }
-        }
-    }
+    
 
     .pagination-centered {
         clear: both;
@@ -594,7 +628,45 @@ h2.block-title {
     border-radius: 0.6rem;
     margin-left: 0.5rem;
 }
+.bottom-row-1{
+    background: $gainsboro;
+    width: 100%;
+    padding: $column-gutter 0;
+}
+.bottom-row-2{
+    padding: $column-gutter 0;
+    background: $monsoon  ;
+    width: 100%;
+    h2.block-title{
+        color: #fff;
+    }
+    .bild-galleri-content {
+        .galleri-item {
+            width: 16.66%;
+            float: left;
+        }
 
+        img {
+            width: 100%;
+            padding: 4px;
+        }
+        @media #{$small-only} {
+            .galleri-item {
+                width: 50%;
+            }
+        }
+        @media #{$medium-only} {
+            .galleri-item {
+                width: 25%;
+            }
+        }
+    }
+    .pagination-centered {
+        clear: both;
+        padding-top: 1.875rem;
+    }
+    
+}
 //Rapportformuläret
 
 label {

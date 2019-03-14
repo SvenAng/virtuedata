@@ -183,16 +183,36 @@
         </aside>
         <?php endif; ?>
         
+<!--
         <?php if (!empty($page['content_wide'])): ?>
         <section role="complementary" class="sidebar-second columns small-12">
             <?php print render($page['content_wide']); ?>
         </section>
         <?php endif; ?>
+-->
         
     </main>
     
     <!--/.l-main -->
+    <?php if (!empty($page['content_wide_1'])): ?>
+    <aside class="bottom-row-1">
+        <div class="row">
+            <section role="complementary" class="columns small-12">
+                <?php print render($page['content_wide_1']); ?>
+            </section>
+        </div>
+    </aside>
+    <?php endif; ?>
     
+    <?php if (!empty($page['content_wide_2'])): ?>
+    <aside class="bottom-row-2">
+        <div class="row">
+            <section role="complementary" class="columns small-12">
+                <?php print render($page['content_wide_2']); ?>
+            </section>
+        </div>
+    </aside>
+    <?php endif; ?>
     
     
     <?php if (!empty($page['triptych_first']) || !empty($page['triptych_middle']) || !empty($page['triptych_last'])): ?>

@@ -1,8 +1,7 @@
 // Virtuedata version 3 2018
 // ================= Generellt =======================
 body {
-        background: $aluminum
-
+    background: $aluminum
 }
 
 
@@ -196,70 +195,87 @@ h2.block-title {
         }
     }
 }
-.view-observationer-frontpage{
-    table{
+
+.view-observationer-frontpage {
+    table {
         width: 100%;
     }
 }
-.node-projekt{
+
+.node-projekt {
     padding-bottom: $column-gutter;
-    .field-name-submitted-by{
+
+    .field-name-submitted-by {
         padding-bottom: $column-gutter/8;
         font-size: 0.85rem;
         font-style: italic;
     }
-    .bild-wrapper{
+
+    .bild-wrapper {
         padding-bottom: $column-gutter/2;
-        .enskild-bild{
-            
+
+        .enskild-bild {
+
             height: auto;
             display: inline-block;
             padding: 5px;
-            img{
+
+            img {
                 max-width: 300px;
             }
         }
-        
+
     }
-    .body{
+
+    .body {
         padding-top: $column-gutter/8;
     }
-    .members-wrapper{
+
+    .members-wrapper {
         margin-bottom: $column-gutter/8;
-        span{
-            padding-right: 2px;;
+
+        span {
+            padding-right: 2px;
+            ;
         }
-        span::after{
+
+        span::after {
             content: ", ";
         }
-        span:last-child::after{
+
+        span:last-child::after {
             content: "";
         }
     }
 }
-.node-rapport{
-    .node-places.node-teaser{
-        
-        .vcard{
+
+.node-rapport {
+    .node-places.node-teaser {
+
+        .vcard {
             border: none;
             margin: 0;
             padding: 0 0 1rem 0;
         }
     }
-    
-    .group-left{
-        padding-bottom: $column-gutter;  
+
+    .group-left {
+        padding-bottom: $column-gutter;
     }
 }
+
 .l-featured {
     margin-bottom: $column-gutter;
     display: block;
-    .view-front-page-banner{
-        margin-bottom: $column-gutter/2; 
+
+    .view-front-page-banner {
+        margin-bottom: $column-gutter/2;
     }
-    section{
-//        margin-bottom: $column-gutter;
+
+    section {
+        //        margin-bottom: $column-gutter;
     }
+
     .banner-wrapper {
 
         div {
@@ -282,6 +298,7 @@ h2.block-title {
                     left: 2rem;
                     z-index: 1;
                     text-shadow: 3px 3px 5px #000;
+
                     h2,
                     h3,
                     h4 {
@@ -299,23 +316,27 @@ h2.block-title {
             }
         }
     }
-    .block-menu-block-22, .block-menu-block-26{
-        ul.menu{
+
+    .block-menu-block-22,
+    .block-menu-block-26 {
+        ul.menu {
             margin: 0;
             list-style: none;
             border-bottom: dashed 1px $iron;
             padding-bottom: $column-gutter/2;
-            li{
+
+            li {
                 display: inline-table;
-                
+
                 //
-                a{
+                a {
                     padding: 0 $column-gutter/2;
                     color: $jet;
-                    text-transform: uppercase;                
+                    text-transform: uppercase;
                 }
-                a::before{
-                    font-family: "Font Awesome 5 Free"; 
+
+                a::before {
+                    font-family: "Font Awesome 5 Free";
                     font-weight: 900;
                     padding-right: $column-gutter/2;
                     font-size: 30px;
@@ -323,37 +344,45 @@ h2.block-title {
                     vertical-align: middle;
                 }
             }
-            li.add-report a::before{
+
+            li.add-report a::before {
                 content: "\f192";
-                color: $virtue-button-report-color;   
+                color: $virtue-button-report-color;
             }
-            li.add-blog a::before{
+
+            li.add-blog a::before {
                 content: "\f573";
                 color: $virtue-button-blog-color;
             }
-            li.add-project a::before{
+
+            li.add-project a::before {
                 content: "\f0c0";
                 color: $primary-color;
             }
-            li.add-place a::before{
+
+            li.add-place a::before {
                 content: "\f3c5";
                 color: $virtue-button-place-color;
             }
-            li.add-report a:hover{
+
+            li.add-report a:hover {
                 color: $virtue-button-report-color;
             }
-            li.add-blog a:hover{
+
+            li.add-blog a:hover {
                 color: $virtue-button-blog-color;
             }
-            li.add-project a:hover{
+
+            li.add-project a:hover {
                 color: $primary-color;
             }
-            li.add-place a:hover{
+
+            li.add-place a:hover {
                 color: $virtue-button-place-color;
             }
         }
     }
-    
+
 }
 
 //===== footer
@@ -363,12 +392,15 @@ h2.block-title {
     height: auto;
     color: $snow;
     text-align: center;
+
     a {
         color: $snow;
     }
-    a:hover{
+
+    a:hover {
         color: $primary-color;
     }
+
     ul.menu {
         margin: 0;
         padding: 0;
@@ -377,31 +409,33 @@ h2.block-title {
             display: inline-block;
             padding: 0 $column-gutter/3;
             border-right: 1px $jumbo solid;
-            
-            a{
+
+            a {
                 color: $smoke;
             }
-            a:hover{
+
+            a:hover {
                 color: $primary-color;
             }
         }
-        li:last-child{
+
+        li:last-child {
             border: none;
         }
 
     }
-    .footer-second{
+
+    .footer-second {
         padding: $column-gutter 0;
-        p{
+
+        p {
             margin: 0;
         }
     }
 }
 
 // vänster sidebar
-.sidebar-first.sidebar section {
-    //  border-right: $horiz-line-color 1px dashed;
-}
+
 
 
 // ========================= Main =======================
@@ -491,7 +525,7 @@ h2.block-title {
         padding-right: 0.3rem;
     }
 
-    
+
 
     .pagination-centered {
         clear: both;
@@ -544,20 +578,60 @@ h2.block-title {
             vertical-align: middle;
         }
     }
+
+    // Login User grjer m.m
+    .block-system{
+        ul.menu .active{
+            color: #fff;
+        }
+        ul{
+            border: none;
+            li{
+                a{
+                    color: #fff;
+                    padding-left: $column-gutter*2;
+                    padding-top: $column-gutter/2;
+                    padding-bottom: $column-gutter/2;
+                    padding-right: $column-gutter/2;
+                    background: $primary-color;
+                    text-transform: uppercase;
+                    font-size: 0.9rem;
+//                    line-height: 2rem;
+                }
+                a:hover{
+                    background: $primary-color-2;
+                    color: #fff;
+                }
+                margin-right: $column-gutter/2;
+                a::before {
+                    padding-left: $column-gutter/2;
+                    font-size: 1.7rem;
+                    line-height: 2rem;
+                    color: $oil;
+                    font-family: "Font Awesome 5 Free";
+                }
+                padding-bottom: $column-gutter/2;
+            }
+        }
+        li.user-create-account {
+            a::before {
+                content: "\f406";
+            }
+        }
+        li.user-login {
+            a::before {
+                content: "\f2f6";
+            }
+        }
+    } 
+
+     
+
 }
 
 // Rapport accordion i rapport.
 
 .field-group-accordion-wrapper {
-
-    //    line
-    a {
-        //        line-height: 2.1rem; 
-        //        position: absolute;
-        //        top: 50%;
-        //        padding: 1rem;
-
-    }
 
     .ui-state-default a::before {
         color: $white;
@@ -628,18 +702,22 @@ h2.block-title {
     border-radius: 0.6rem;
     margin-left: 0.5rem;
 }
-.bottom-row-1{
+
+.bottom-row-1 {
     background: $gainsboro;
     width: 100%;
     padding: $column-gutter 0;
 }
-.bottom-row-2{
+
+.bottom-row-2 {
     padding: $column-gutter 0;
-    background: $monsoon  ;
+    background: $monsoon;
     width: 100%;
-    h2.block-title{
+
+    h2.block-title {
         color: #fff;
     }
+
     .bild-galleri-content {
         .galleri-item {
             width: 16.66%;
@@ -650,23 +728,27 @@ h2.block-title {
             width: 100%;
             padding: 4px;
         }
+
         @media #{$small-only} {
             .galleri-item {
                 width: 50%;
             }
         }
+
         @media #{$medium-only} {
             .galleri-item {
                 width: 25%;
             }
         }
     }
+
     .pagination-centered {
         clear: both;
         padding-top: 1.875rem;
     }
-    
+
 }
+
 //Rapportformuläret
 
 label {
@@ -690,11 +772,12 @@ button#edit-field-fynd-und-actions-ief-add::before {
     color: $primary-color;
 
 }
+
 // Entity connect
 
 
 button#edit-field-place-add-entityconnect-field-place-all-,
-button#edit-field-place-und-0-add-entityconnect-field-place-0-{
+button#edit-field-place-und-0-add-entityconnect-field-place-0- {
     padding: 0rem;
     font-size: 0rem;
     margin-top: 0.5rem;
@@ -703,7 +786,7 @@ button#edit-field-place-und-0-add-entityconnect-field-place-0-{
 }
 
 button#edit-field-place-add-entityconnect-field-place-all-::before,
-button#edit-field-place-und-0-add-entityconnect-field-place-0-::before{
+button#edit-field-place-und-0-add-entityconnect-field-place-0-::before {
     padding: 0.5rem;
     content: "+ ";
     font-size: 2rem;
@@ -712,6 +795,7 @@ button#edit-field-place-und-0-add-entityconnect-field-place-0-::before{
     color: $primary-color;
 
 }
+
 .button.active {
     background: $primary-color;
     color: white;
@@ -732,15 +816,18 @@ button#edit-field-place-und-0-add-entityconnect-field-place-0-::before{
         }
     }
 }
-.user-profile{
-    span{
+
+.user-profile {
+    span {
         margin-right: $column-gutter/5;
     }
 }
-.node{
-    ul{
+
+.node {
+    ul {
         list-style: inherit;
-        li{
+
+        li {
             padding-bottom: 6px;
         }
     }

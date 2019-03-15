@@ -6793,21 +6793,25 @@ h2.block-title {
     padding-bottom: 0.9375rem;
   }
 }
-.l-featured .block-menu-block-22 ul.menu, .l-featured .block-menu-block-26 ul.menu {
+.l-featured .block-menu-block-22 ul.menu,
+.l-featured .block-menu-block-26 ul.menu {
   margin: 0;
   list-style: none;
   border-bottom: dashed 1px #CCCCCC;
   padding-bottom: 0.9375rem;
 }
-.l-featured .block-menu-block-22 ul.menu li, .l-featured .block-menu-block-26 ul.menu li {
+.l-featured .block-menu-block-22 ul.menu li,
+.l-featured .block-menu-block-26 ul.menu li {
   display: inline-table;
 }
-.l-featured .block-menu-block-22 ul.menu li a, .l-featured .block-menu-block-26 ul.menu li a {
+.l-featured .block-menu-block-22 ul.menu li a,
+.l-featured .block-menu-block-26 ul.menu li a {
   padding: 0 0.9375rem;
   color: #222222;
   text-transform: uppercase;
 }
-.l-featured .block-menu-block-22 ul.menu li a::before, .l-featured .block-menu-block-26 ul.menu li a::before {
+.l-featured .block-menu-block-22 ul.menu li a::before,
+.l-featured .block-menu-block-26 ul.menu li a::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   padding-right: 0.9375rem;
@@ -6815,32 +6819,40 @@ h2.block-title {
   color: #222222;
   vertical-align: middle;
 }
-.l-featured .block-menu-block-22 ul.menu li.add-report a::before, .l-featured .block-menu-block-26 ul.menu li.add-report a::before {
+.l-featured .block-menu-block-22 ul.menu li.add-report a::before,
+.l-featured .block-menu-block-26 ul.menu li.add-report a::before {
   content: "\f192";
   color: #339AD8;
 }
-.l-featured .block-menu-block-22 ul.menu li.add-blog a::before, .l-featured .block-menu-block-26 ul.menu li.add-blog a::before {
+.l-featured .block-menu-block-22 ul.menu li.add-blog a::before,
+.l-featured .block-menu-block-26 ul.menu li.add-blog a::before {
   content: "\f573";
   color: #29936B;
 }
-.l-featured .block-menu-block-22 ul.menu li.add-project a::before, .l-featured .block-menu-block-26 ul.menu li.add-project a::before {
+.l-featured .block-menu-block-22 ul.menu li.add-project a::before,
+.l-featured .block-menu-block-26 ul.menu li.add-project a::before {
   content: "\f0c0";
   color: #ff8519;
 }
-.l-featured .block-menu-block-22 ul.menu li.add-place a::before, .l-featured .block-menu-block-26 ul.menu li.add-place a::before {
+.l-featured .block-menu-block-22 ul.menu li.add-place a::before,
+.l-featured .block-menu-block-26 ul.menu li.add-place a::before {
   content: "\f3c5";
   color: #E32626;
 }
-.l-featured .block-menu-block-22 ul.menu li.add-report a:hover, .l-featured .block-menu-block-26 ul.menu li.add-report a:hover {
+.l-featured .block-menu-block-22 ul.menu li.add-report a:hover,
+.l-featured .block-menu-block-26 ul.menu li.add-report a:hover {
   color: #339AD8;
 }
-.l-featured .block-menu-block-22 ul.menu li.add-blog a:hover, .l-featured .block-menu-block-26 ul.menu li.add-blog a:hover {
+.l-featured .block-menu-block-22 ul.menu li.add-blog a:hover,
+.l-featured .block-menu-block-26 ul.menu li.add-blog a:hover {
   color: #29936B;
 }
-.l-featured .block-menu-block-22 ul.menu li.add-project a:hover, .l-featured .block-menu-block-26 ul.menu li.add-project a:hover {
+.l-featured .block-menu-block-22 ul.menu li.add-project a:hover,
+.l-featured .block-menu-block-26 ul.menu li.add-project a:hover {
   color: #ff8519;
 }
-.l-featured .block-menu-block-22 ul.menu li.add-place a:hover, .l-featured .block-menu-block-26 ul.menu li.add-place a:hover {
+.l-featured .block-menu-block-22 ul.menu li.add-place a:hover,
+.l-featured .block-menu-block-26 ul.menu li.add-place a:hover {
   color: #E32626;
 }
 
@@ -6988,6 +7000,43 @@ h2.block-title {
   font-style: italic;
   color: #444444;
   vertical-align: middle;
+}
+.l-main .block-system ul.menu .active {
+  color: #fff;
+}
+.l-main .block-system ul {
+  border: none;
+}
+.l-main .block-system ul li {
+  margin-right: 0.9375rem;
+  padding-bottom: 0.9375rem;
+}
+.l-main .block-system ul li a {
+  color: #fff;
+  padding-left: 3.75rem;
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
+  padding-right: 0.9375rem;
+  background: #ff8519;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+.l-main .block-system ul li a:hover {
+  background: #e26900;
+  color: #fff;
+}
+.l-main .block-system ul li a::before {
+  padding-left: 0.9375rem;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  color: #333333;
+  font-family: "Font Awesome 5 Free";
+}
+.l-main .block-system li.user-create-account a::before {
+  content: "\f406";
+}
+.l-main .block-system li.user-login a::before {
+  content: "\f2f6";
 }
 
 .field-group-accordion-wrapper .ui-state-default a::before {

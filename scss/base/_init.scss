@@ -820,6 +820,7 @@ button#edit-field-place-und-0-add-entityconnect-field-place-0-::before {
 .user-profile {
     span {
         margin-right: $column-gutter/5;
+        
     }
 }
 
@@ -829,6 +830,35 @@ button#edit-field-place-und-0-add-entityconnect-field-place-0-::before {
 
         li {
             padding-bottom: 6px;
+        }
+    }
+}
+
+// Resultatvyer
+.view-rapporter-via-observationer{
+    line-height: 1.8rem;
+    .date-display-single, .date-display-start, .date-display-end{
+        font-style: italic;
+    }
+    .view-content > .view-grouping{
+        border-bottom: 1px #333 dotted;
+        padding: $column-gutter/2 0;
+        .view-grouping-header{
+            a{
+                font-size: 1.2rem;
+                font-weight: 700;
+            }
+            
+        }
+        .view-grouping-content{
+            h3 {
+                margin: 0 0 10px 0;
+                line-height: 1rem;
+                a{
+                    font-size: 1rem;
+                    font-weight: 400;
+                }
+            }
         }
     }
 }

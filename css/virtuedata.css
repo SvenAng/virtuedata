@@ -7193,4 +7193,27 @@ button#edit-field-place-und-0-add-entityconnect-field-place-0-::before {
   padding-bottom: 6px;
 }
 
+.view-rapporter-via-observationer {
+  line-height: 1.8rem;
+}
+.view-rapporter-via-observationer .date-display-single, .view-rapporter-via-observationer .date-display-start, .view-rapporter-via-observationer .date-display-end {
+  font-style: italic;
+}
+.view-rapporter-via-observationer .view-content > .view-grouping {
+  border-bottom: 1px #333 dotted;
+  padding: 0.9375rem 0;
+}
+.view-rapporter-via-observationer .view-content > .view-grouping .view-grouping-header a {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.view-rapporter-via-observationer .view-content > .view-grouping .view-grouping-content h3 {
+  margin: 0 0 10px 0;
+  line-height: 1rem;
+}
+.view-rapporter-via-observationer .view-content > .view-grouping .view-grouping-content h3 a {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 /*# sourceMappingURL=virtuedata.css.map */

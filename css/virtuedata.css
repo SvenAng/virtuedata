@@ -6897,7 +6897,7 @@ h2.block-title {
 .l-main {
   margin-bottom: 1.875rem;
 }
-.l-main ul {
+.l-main ul.menu {
   list-style: none;
 }
 .l-main ul.menu {
@@ -7096,35 +7096,42 @@ h2.block-title {
   padding: 1.875rem 0;
 }
 
-.bottom-row-2 {
+.bottom-row-1 {
   padding: 1.875rem 0;
-  background: #777777;
   width: 100%;
 }
-.bottom-row-2 h2.block-title {
-  color: #fff;
-}
-.bottom-row-2 .bild-galleri-content .galleri-item {
+.bottom-row-1 .bild-galleri-content .galleri-item {
   width: 16.66%;
   float: left;
 }
-.bottom-row-2 .bild-galleri-content img {
+.bottom-row-1 .bild-galleri-content img {
   width: 100%;
   padding: 4px;
 }
 @media only screen and (max-width: 40em) {
-  .bottom-row-2 .bild-galleri-content .galleri-item {
+  .bottom-row-1 .bild-galleri-content .galleri-item {
     width: 50%;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .bottom-row-2 .bild-galleri-content .galleri-item {
+  .bottom-row-1 .bild-galleri-content .galleri-item {
     width: 25%;
   }
 }
-.bottom-row-2 .pagination-centered {
+.bottom-row-1 .pagination-centered {
   clear: both;
   padding-top: 1.875rem;
+}
+
+.bottom-row-2 {
+  padding: 1.875rem 0;
+  background: #777777;
+}
+.bottom-row-2 h2.block-title {
+  color: #fff;
+}
+.bottom-row-2 .views-widget-filter-title label {
+  color: #fff;
 }
 
 label {

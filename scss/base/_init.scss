@@ -442,7 +442,7 @@ h2.block-title {
 .l-main {
     margin-bottom: $column-gutter;
 
-    ul {
+    ul.menu {
         list-style: none;
     }
 
@@ -709,13 +709,13 @@ h2.block-title {
     padding: $column-gutter 0;
 }
 
-.bottom-row-2 {
+.bottom-row-1 {
     padding: $column-gutter 0;
-    background: $monsoon;
+//    background: $monsoon;
     width: 100%;
 
     h2.block-title {
-        color: #fff;
+        
     }
 
     .bild-galleri-content {
@@ -748,7 +748,18 @@ h2.block-title {
     }
 
 }
-
+.bottom-row-2 {
+    padding: $column-gutter 0;
+    background: $monsoon;
+    h2.block-title,  {
+        color: #fff;
+    }
+    .views-widget-filter-title label{
+        
+        color: #fff;
+        
+    }
+}
 //Rapportformuläret
 
 label {

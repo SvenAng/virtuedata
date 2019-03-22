@@ -66,5 +66,34 @@
   <?php print $page_bottom; ?>
   <?php print _zurb_foundation_add_reveals(); ?>
     
+<!-- <script>
+    (function ($, Drupal, window, document, undefined) {
+      $(document).foundation();
+    })(jQuery, Drupal, this, this.document);
+  </script> -->
+  <script src="/sites/all/themes/virtuedata/js/jquery-3.1.1.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="/sites/all/themes/virtuedata/js/jquery.bxslider.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.bxslider').bxSlider({
+      mode: 'horizontal',
+      moveSlides: 1,
+      slideMargin: 10,
+      responsive: true,
+      infiniteLoop: true,
+      autoControls: true,
+      stopAutoOnClick: true,
+      pager: true,
+      slideWidth: 660,
+      minSlides: 1,
+      maxSlides: 1,
+      captions: true,
+      adaptiveHeight: true,
+      speed: 800,
+    });
+  });
+</script>
+    
 </body>
 </html>

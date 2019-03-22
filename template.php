@@ -4,6 +4,10 @@
  * Implements template_preprocess_html().
  */
 function virtuedata_preprocess_html(&$variables) {
+    $node = menu_get_object();
+    if ($node && $node->nid) {
+        $variables['theme_hook_suggestions'][] = 'html__' . $node->type;
+    }
 }
 
 /**

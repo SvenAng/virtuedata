@@ -20,7 +20,7 @@ output_style = :expanded
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
 # line_comments = false
-line_comments = false
+line_comments = true
 sourcemap = true
 
 
